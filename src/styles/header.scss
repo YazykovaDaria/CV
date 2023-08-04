@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+.header__list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
