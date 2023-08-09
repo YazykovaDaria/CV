@@ -1,0 +1,51 @@
+.skills {
+  padding: 2rem;
+  @include bg-gradient();
+  border-radius: 10px;
+  color: $on-gradient-font-color;
+}
+
+.skills__bg {
+  padding: 1.5rem 10px 2rem 10px;
+  background-color: $main-color;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.subtitle--skills {
+  color: $acsent-font-color;
+}
+
+.skills-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+
+  @media(max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.text--skills {
+  margin: 1rem 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skills__item {
+  position: relative;
+  font-size: 1.5rem;
+
+  &::before {
+    content: '';
+    background: url('./src/assets/svg/icons8-ok.svg');
+    position:absolute;
+    top: -4px;
+    left: -35px;
+    width: 30px;
+    height: 30px;
+}
+}

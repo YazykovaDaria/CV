@@ -1,12 +1,19 @@
 .header {
-  display: flex;
-  justify-content: flex-end;
   position: sticky;
   top: 0;
+  z-index: 5;
   padding: 1rem;
+  background-color: $side-color;
 }
 
-.header__list {
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav__list {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
