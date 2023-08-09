@@ -1,20 +1,99 @@
-.container {
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
   display: flex;
-  min-height: 100vh;
+  // min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $main-color;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: $main-font-color;
+}
+
+.container {
   margin: 0 auto;
   max-width: $max-content;
   padding: 0 20px;
 }
 
 .link {
-  text-decoration: none;
-  color: $side-color;
+  color: $acsent-font-color;
   transition: 0.3s;
 
   &:hover {
     color: $hover-color;
+    font-weight: 700;
     transition: 0.3s;
   }
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px solid $acsent-font-color;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  color: $main-font-color;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+
+  &:hover {
+  background-color: $hover-color;
+  color: $main-color;
+  transition: 0.3s;
+  }
+}
+
+.button--acsent {
+  background-color: $acsent-font-color;
+  color: $main-color;
+  transition: 0.3s;
+}
+
+.bg-side {
+  background-color: $side-color;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.list-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
