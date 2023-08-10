@@ -18,7 +18,6 @@ export const getCard = (card) => {
 , stackEl, buttonsEl);
 
   cardEl.addEventListener('mouseover', () => {
-    console.log('hi');
     hideEl.classList.add(activeClass);
   });
 

@@ -19,6 +19,7 @@
 .card {
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 gap: 1rem;
 padding: 1rem 10px;
 background-color: $side-color;
