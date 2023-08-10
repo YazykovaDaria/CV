@@ -106,12 +106,12 @@ a {
 .before-line {
   position: relative;
 
-  &:not(:last-child)::before {
+  &::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: $acsent-font-color;
-    bottom: -1.24rem;
+    bottom: -1.25rem;
   }
 }
