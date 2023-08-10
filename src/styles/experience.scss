@@ -1,0 +1,25 @@
+.list-col--experience {
+  gap: 2.5rem;
+  padding: 1rem 10px 3rem 10px;
+}
+
+.experience-job {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 2.5rem;
+  position: relative;
+}
+
+.experience__marker {
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url('./src/assets/svg/arrow-right.svg');
+    position:absolute;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+  }
+}

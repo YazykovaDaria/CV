@@ -2,7 +2,7 @@ const activeClass = 'active';
 
 export const getCard = (card) => {
   const cardEl = createEl('div', 'card');
-  cardEl.innerHTML = `<h2 class="card__title text">${card.title}</h2>`;
+  cardEl.innerHTML = `<h2 class="subtitle">${card.title}</h2>`;
 
   const hideWrapper = createEl('div', 'hide-wrapper');
   const hideEl = createEl('p', 'hide-description text', card.description);
