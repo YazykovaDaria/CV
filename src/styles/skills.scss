@@ -3,6 +3,10 @@
   @include bg-gradient();
   border-radius: 10px;
   color: $on-gradient-font-color;
+
+  @media(max-width: 600px) {
+    padding: 1rem 10px;
+  }
 }
 
 .skills__bg {
@@ -26,6 +30,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    padding: 1rem 10px;
   }
 }
 
@@ -47,5 +52,9 @@
     left: -35px;
     width: 30px;
     height: 30px;
+}
+
+@media(max-width: 500px) {
+  font-size: 1rem;
 }
 }
