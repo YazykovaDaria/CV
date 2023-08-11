@@ -1,0 +1,20 @@
+.languages {
+  padding-top: 2rem;
+}
+
+.languages__list {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 28px;
+    grid-template-rows: repeat(2, auto);
+}
+
+.list-col--lang {
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  width: 80px;
+  accent-color: $acsent-font-color;
+}
