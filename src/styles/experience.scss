@@ -1,6 +1,6 @@
 .list-col--experience {
   gap: 2.5rem;
-  padding: 1rem 10px 3rem 10px;
+  padding: 1rem 10px 1.5rem 10px;
 }
 
 .experience-job {
@@ -9,6 +9,7 @@
   grid-template-rows: auto auto 1fr;
   column-gap: 2.5rem;
   position: relative;
+  line-height: 1.2;
 }
 
 .experience__marker {

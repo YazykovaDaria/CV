@@ -9,7 +9,6 @@ a {
 
 .body {
   display: flex;
-  // min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
   background-color: $main-color;
@@ -110,7 +109,7 @@ a {
 .before-line {
   position: relative;
 
-  &::before {
+  &:not(:last-child)::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -121,8 +120,8 @@ a {
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   fill: $main-font-color;
   transition: 0.3s;
 
