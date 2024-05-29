@@ -15,26 +15,27 @@
           <nav class="nav">
             <ul class="nav__list">
               <li>
-                <a href="#skills" class="link">Skills</a>
+                <a href="#skills" class="link header__link">Skills</a>
               </li>
               <li>
-                <a href="#projects" class="link">Projects</a></li>
+                <a href="#projects" class="link header__link">Projects</a></li>
               <li>
-                <a href="#experience" class="link">Experience</a></li>
+                <a href="#experience" class="link header__link">Experience</a></li>
               <li>
-                <a href="#languages" class="link">Languages</a></li>
+                <a href="#languages" class="link header__link">Languages</a></li>
               <li>
-                  <a href="#education" class="link">Education</a></li>
+                  <a href="#education" class="link header__link">Education</a></li>
                   <li>
-                    <a href="#contacts" class="link">Contacts</a></li>
+                    <a href="#contacts" class="link header__link">Contacts</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <div class="container">
 
-        <section class="about">
+      <section class="about">
+        <div class="container">
+
           <div class="about about__paddings">
             <div class="titles-container">
               <h3 class="text">Hello, I'm</h3>
@@ -47,34 +48,38 @@
               <a href="/assets/content/CV_Yazykova_Darya_frontend.pdf" class="button" title download>Domload CV</a>
             </div>
           </div>
+        </div>
 
-          <div class="bg-side">
+        <div class="bg-side">
+
+          <div class="container">
 
             <div class="titles-container about__titles--info">
               <p class="text">Get to know</p>
               <h2 class="subtitle">About me</h2>
             </div>
 
-  <div  class="about__info">
-    <img src="./assets/img/me.jpg" alt="photo" class="about__photo">
-    <ul class="about__description">
-      <li class="text">Nice to meet you! I am a front-end developer</li>
-      <li class="text">My stack: React, TypeScript, Redux, SCSS, MUI, but I’m always glad to explore and master other technologies</li>
-      <li class="text">I came into development because I like to create something new and solve new interesting tasks. What I like most about front-end development is that the same task can be solved in different ways, and you can immediately see the results of your work</li>
-      <li class="text">I am looking forward to working in teams as well as individually. I am not only willing to deepen my knowledge but I also want to apply them to the real products</li>
-              </ul>
-            </div>
+            <div  class="about__info">
+              <img src="./assets/img/me.jpg" alt="photo" class="about__photo">
+              <ul class="about__description">
+                <li class="text">Nice to meet you! I am a front-end developer</li>
+                <li class="text">My stack: React, TypeScript, Redux, SCSS, MUI, but I’m always glad to explore and master other technologies</li>
+                <li class="text">I came into development because I like to create something new and solve new interesting tasks. What I like most about front-end development is that the same task can be solved in different ways, and you can immediately see the results of your work</li>
+                <li class="text">I am looking forward to working in teams as well as individually. I am not only willing to deepen my knowledge but I also want to apply them to the real products</li>
+                        </ul>
+                      </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="skills" id="skills">
+      <section class="skills" id="skills">
+        <div class="container">
           <div class="skills__bg">
 
             <div class="titles-container">
               <p class="text">What skills I have</p>
               <h2 class="subtitle subtitle--acsent">My experience</h2>
             </div>
-
             <div class="skills-row">
               <div>
                 <h3 class="text text--skills">I know</h3>
@@ -83,7 +88,7 @@
                   <li class="skills__item">TypeScript</li>
                   <li class="skills__item">React</li>
                   <li class="skills__item">Redux Toolkit</li>
-                  <li class="skills__item">HTML</li>
+                  <li class="skills__item">HTML | PUG</li>
                   <li class="skills__item">CSS | SCSS</li>
                   <li class="skills__item">MUI | Tailwind</li>
                   <li class="skills__item">WebPack | Vite</li>
@@ -107,22 +112,24 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
+            </div>
+        </div>
 
-        <section id="projects" class="projects">
+      </section>
 
-          <div class="titles-container">
-            <p class="text">What I do</p>
-            <h2 class="subtitle subtitle--acsent">Recent projects</h2>
-          </div>
+      <section id="projects" class="projects">
+<div class="container">
+  <div class="titles-container project__titles">
+    <p class="text">What I do</p>
+    <h2 class="subtitle subtitle--acsent">Recent projects</h2>
+  </div>
 
-          <div class="card-container" id="cards"></div>
+  <div class="card-container" id="cards"></div>
+</div>
+      </section>
 
-        </section>
-
-
-        <section class="list-col list-col--experience" id="experience">
+      <section class="list-col list-col--experience experience" id="experience">
+        <div class="container">
           <div class="titles-container">
             <p class="text">Where I worked</p>
             <h2 class="subtitle subtitle--acsent">Professional Experience</h2>
@@ -150,7 +157,7 @@
 
               <ul class="list-col">
                 <li></li>
-                <li class="text">2018 — 2021</li>
+                <li class="text">2016 — 2021</li>
                 <li></li>
                 <li class="text">Mogilev State A. Kuleshov University</li>
               </ul>
@@ -162,7 +169,7 @@
             </ul>
             </div>
 
-            <div class="experience-job before-line">
+            <!-- <div class="experience-job before-line">
 
               <ul class="list-col">
                 <li></li>
@@ -176,12 +183,16 @@
               <li class="text experience__marker">Teached students in a wide variety of sports, exercises, and activities, promoting fundamental skills, teamwork, and sportsmanship values</li>
               <li class="text experience__marker"> Managed administrative and educational documentation</li>
             </ul>
-            </div>
-            </div>
-        </section>
+            </div> -->
 
-        <section class="languages bg-side list-col list-col--experience" id="languages">
-          <div class="titles-container">
+            </div>
+        </div>
+
+      </section>
+
+      <section class="languages bg-side list-col list-col--experience" id="languages">
+        <div class="container">
+          <div class="titles-container project__titles">
             <p class="text">I can speak</p>
             <h2 class="subtitle subtitle--acsent">Languages</h2>
           </div>
@@ -205,9 +216,12 @@
           <li class="text">Intermediate</li>
         </ul>
         </div>
-        </section>
+        </div>
 
-        <section class="list-col education" id="education">
+      </section>
+
+      <section class="" id="education">
+        <div class="container list-col education">
           <div class="titles-container">
             <p class="text">Where I gained my knowledge</p>
             <h2 class="subtitle subtitle--acsent">Education and courses</h2>
@@ -249,10 +263,10 @@
               <a class="link link--education" href="https://www.msu.by/en/">Mogilev State A. Kuleshov University</a>
             </li>
           </ul>
+        </div>
+      </section>
 
-        </section>
 
-</div>
 
 <footer class="bg-side">
   <div class="container">

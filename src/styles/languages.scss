@@ -1,20 +1,26 @@
 .languages {
-  padding-top: 2rem;
+    padding-block: 2rem;
 }
 
 .languages__list {
-  display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 28px;
-    grid-template-rows: repeat(2, auto);
 }
 
 .list-col--lang {
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .progress {
-  width: 80px;
-  accent-color: $acsent-font-color;
+    width: 80px;
+    accent-color: $acsent-font-color;
+}
+
+@media (max-width: 540px) {
+    .languages__list {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
 }

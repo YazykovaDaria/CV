@@ -1,21 +1,21 @@
 .education {
-  gap: 2.5rem;
-  padding: 2.5rem 10px;
+    gap: 2.5rem;
+    padding-block: 2.5rem;
 }
 
 .education__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr 2fr;
-  column-gap: 28px;
-  line-height: 1.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    column-gap: 28px;
+    line-height: 1.8;
 
-  @media(max-width: 780px) {
-    display: flex;
-    flex-direction: column;
-  }
+    @media (max-width: 780px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .link--education {
-  color: $main-font-color;
-  text-decoration: underline;
+    color: $main-font-color;
+    text-decoration: underline;
 }

@@ -1,7 +1,8 @@
-import graph from '../assets/img/graphGl.png';
+// import graph from '../assets/img/graphGl.png';
 import rss from '../assets/img/agregator.png';
 import threetter from '../assets/img/threetter.png';
 import song from '../assets/img/song.png';
+import shelter from '../assets/img/shelter.png';
 
 export const projects = [
   {
@@ -13,13 +14,21 @@ export const projects = [
     img: rss
   },
   {
-    title: 'Graphiql-app',
-    description: 'The GraphQL Playground is a development tool that provides a streamlined environment for exploring and interacting with the \'Rick and Morty\' API using GraphQL',
-    stack: 'TS, React, Redux Toolkit, React Hook Form, Firebase, i18next, Material UI',
-    gitLink: 'https://github.com/YazykovaDaria/graphiql-app',
-    demoLink: 'https://graphiql-app-iota.vercel.app/',
-    img: graph
+    title: 'Shelter',
+    description: 'A simple two-page application for an animal shelter',
+    stack: 'PUG, SCSS, JS, Webpack',
+    gitLink: 'https://github.com/YazykovaDaria/shelter?tab=readme-ov-file',
+    demoLink: 'https://shelter-site-rss.netlify.app/',
+    img: shelter
   },
+  // {
+  //   title: 'Graphiql-app',
+  //   description: 'The GraphQL Playground is a development tool that provides a streamlined environment for exploring and interacting with the \'Rick and Morty\' API using GraphQL',
+  //   stack: 'TS, React, Redux Toolkit, React Hook Form, Firebase, i18next, Material UI',
+  //   gitLink: 'https://github.com/YazykovaDaria/graphiql-app',
+  //   demoLink: 'https://graphiql-app-iota.vercel.app/',
+  //   img: graph
+  // },
   {
     title: 'Twitter-clone',
     description: 'The application is a simplified clone of the social network Twitter',
@@ -31,7 +40,7 @@ export const projects = [
   {
     title: 'SongQuiz',
     description: 'Quiz about songs by Belarusian musicians',
-    stack: 'JS, SCSS',
+    stack: 'HTML, SCSS, JS',
     gitLink: 'https://github.com/YazykovaDaria/RS-school-JS-FE-Course-2022Q3/tree/songbird',
     demoLink: ' https://yazykovadaria.github.io/RS-school-JS-FE-Course-2022Q3/songquiz/#main',
     img: song

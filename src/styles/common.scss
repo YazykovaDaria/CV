@@ -1,133 +1,144 @@
 html {
-  scroll-behavior: smooth;
-  font-size: 16px;
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: $main-color;
-  font-family: 'Roboto';
-  font-weight: 400;
-  color: $main-font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $main-color;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: $main-font-color;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: $max-content;
-  padding: 0 20px;
+    margin: 0 auto;
+    max-width: $max-content;
+    padding: 0 20px;
+}
+
+@media (max-width: 540px) {
+    .container {
+        padding: 0 10px;
+    }
 }
 
 .link {
-  color: $acsent-font-color;
-  transition: 0.3s;
-
-  &:hover {
-    color: $hover-color;
-    font-weight: 700;
+    color: $acsent-font-color;
     transition: 0.3s;
-  }
+
+    &:hover {
+        color: $hover-color;
+        transition: color 0.3s ease-in;
+    }
 }
 
 .titles-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .subtitle {
-  font-size: 1.8rem;
-  font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .subtitle--acsent {
-  color: $acsent-font-color;
+    color: $acsent-font-color;
+    text-align: center;
 }
 
 .title {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .text {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .font-500 {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .buttons-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .button {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 20px;
-  border: 1px solid $acsent-font-color;
-  padding: 1rem 1.5rem;
-  border-radius: 5px;
-  color: $main-font-color;
-  cursor: pointer;
-  position: relative;
-  transition: 0.3s;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid $acsent-font-color;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    color: $main-font-color;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
 
-  &:hover {
-  background-color: $hover-color;
-  color: $main-color;
-  transition: 0.3s;
-  }
+    &:hover {
+        background-color: $hover-color;
+        color: $main-color;
+        transition: 0.3s;
+    }
 }
 
 .button--acsent {
-  background-color: $acsent-font-color;
-  color: $main-color;
-  transition: 0.3s;
+    background-color: $acsent-font-color;
+    color: $main-color;
+    transition: 0.3s;
 }
 
 .bg-side {
-  background-color: $side-color;
-  padding: 2rem;
-  border-radius: 5px;
+    background-color: $side-color;
+    padding: 2rem;
+    border-radius: 5px;
+
+    @media (max-width: 540px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .list-col {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .before-line {
-  position: relative;
+    position: relative;
 
-  &:not(:last-child)::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: $acsent-font-color;
-    bottom: -1.25rem;
-  }
+    &:not(:last-child)::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $acsent-font-color;
+        bottom: -1.25rem;
+    }
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
-  fill: $main-font-color;
-  transition: 0.3s;
-
-  &:hover {
-    fill: $acsent-font-color;
-    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    fill: $main-font-color;
     transition: 0.3s;
-  }
+
+    &:hover {
+        fill: $acsent-font-color;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 }
